@@ -1,0 +1,302 @@
+.homeContainer{
+    display: flex;
+    justify-content: center;
+}
+.homeBody{
+    margin-top: 40px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFE6E6;
+    color: black;
+}
+.homeBody a{
+    color: black;
+}
+.homeContent{
+    margin-left: 20px;
+}
+.homeTitle{
+    height: 60px;
+    margin: 0;
+    padding: 20px;
+    background-color: #FF2626;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homeRight{
+    display: flex;
+}  
+.svgIcon {
+    width: 12px;
+    transition-duration: .3s;
+}
+.svgIcon path {
+    fill: black;
+}
+.buttonDelete {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+    margin-right: 5px;
+}
+.buttonDelete:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: #BD1616;
+    align-items: center;
+}
+.buttonDelete:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+.buttonDelete::before {
+    position: absolute;
+    top: -20px;
+    content: "Borrar";
+    color: black;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+.buttonDelete:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
+.buttonEdit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+}
+.buttonEdit:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: #E8BB02;
+    align-items: center;
+}
+.buttonEdit:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+.buttonEdit::before {
+    position: absolute;
+    top: -20px;
+    content: "Editar";
+    color: black;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+.buttonEdit:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
+.buttonSave {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+}
+.buttonSave:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: #54B435;
+    align-items: center;
+}
+.buttonSave:hover .svgIcon {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translateY(60%);
+}
+.buttonSave::before {
+    position: absolute;
+    top: -20px;
+    content: "Guardar";
+    color: black;
+    transition-duration: .3s;
+    font-size: 2px;
+}
+.buttonSave:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(30px);
+    transition-duration: .3s;
+}
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 20px;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #BD1616;
+    transition: all 0.3s ease;
+  }
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #BD1616;
+  }
+  .input-field:focus + .input-label + .input-highlight {
+    width: 100%;
+  }
+  .container{
+    display: inline-flex;
+    margin-left: 20px;
+  }
+  .container p{
+    margin-right: 10px;
+  }
+  .check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #BD1616;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  .check:hover:before {
+    opacity: 1;
+  }
+  .check:hover svg {
+    stroke: #BD1616;
+  }
+  #cbx:checked + .check svg {
+    stroke: #BD1616;
+  }
+  #cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  #cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+  .buttonDetail {
+    padding: 1em 2.5em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #BD1616;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+  }
+  .buttonDetail:hover {
+    background-color: #FF2626;
+    box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  .buttonDetail:active {
+    transform: translateY(-1px);
+  }

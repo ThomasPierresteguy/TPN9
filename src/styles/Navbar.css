@@ -1,0 +1,19 @@
+.navbarBody{
+    background-color: #BD1616;
+    color: white;
+    height: 40px;
+    align-items: center;
+    display: flex;
+}
+.navbarBody a{
+    color: white;
+    text-decoration: none;
+}
+.navbarBody ul{
+    margin: 0%;
+    display: flex;
+}
+.navbarBody li{
+    display: block;
+    margin-right: 20px;
+}
